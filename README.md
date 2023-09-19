@@ -19,7 +19,7 @@
 
 ## Preview
 
-[Link to Live Demo](https://your-demo-link-here.com)
+[Link to Live Demo](https://jhschier.github.io/Project-Randomizer/target="_blank")
 
 ## About
 
