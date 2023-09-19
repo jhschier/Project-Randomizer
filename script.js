@@ -1,21 +1,25 @@
 const buttonclick = document.querySelector(".random-button")
+const getResult = document.querySelector(".result-text")
 
 
 
-function generateNumber() {
-
+async function generateNumber() {
+    
+   
     const min = Math.ceil(document.querySelector(".input1").value)
     const max = Math.floor (document.querySelector(".input2").value)
 
 
       const result = Math.floor(Math.random() * (max - min + 1)) + min;
-      alert(result)
+
+      if (buttonclick) {
+        getResult.innerHTML = result
+      }
+      
     }
 
 
+   
+    buttonclick.addEventListener("click", generateNumber)
+    getResult.addEventListener("change", generateNumber)
 
-
-
-
-
-buttonclick.addEventListener("click", generateNumber)
