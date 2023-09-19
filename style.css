@@ -97,3 +97,11 @@ button:hover {
     background-color: #A33E63;
     font-size: 15px;
 }
+
+@media screen, (max-width: 600px) {
+
+    .gif-img {
+        max-width: 50%;
+    }
+
+}
