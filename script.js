@@ -3,7 +3,7 @@ const getResult = document.querySelector(".result-text")
 
 
 
-async function generateNumber() {
+function generateNumber() {
     
    
     const min = Math.ceil(document.querySelector(".input1").value)
@@ -12,9 +12,16 @@ async function generateNumber() {
 
       const result = Math.floor(Math.random() * (max - min + 1)) + min;
 
+      if (min >= max){
+        getResult.innerHTML = "Wrong Input"
+        window.alert("Minimum number must be lower than the maximum number.")
+      } else{
+
       if (buttonclick) {
         getResult.innerHTML = result
       }
+    }
+    
       
     }
 
